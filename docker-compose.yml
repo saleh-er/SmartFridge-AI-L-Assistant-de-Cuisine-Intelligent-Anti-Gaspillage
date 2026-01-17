@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  # Le cerveau (Python API)
+  backend:
+    build: ./backend
+    container_name: smart-fridge-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app # Permet de modifier le code sans redémarrer le conteneur
+
+  # L'interface (Serveur Web léger)
+  frontend:
+    image: nginx:alpine
+    container_name: smart-fridge-frontend
+    ports:
+      - "80:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html # Sert tes fichiers HTML/JS

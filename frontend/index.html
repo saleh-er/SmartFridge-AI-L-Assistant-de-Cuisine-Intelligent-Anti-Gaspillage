@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartFridge AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center p-10">
+    <h1 class="text-3xl font-bold mb-6 text-green-600">🍎 SmartFridge AI</h1>
+    
+    <div class="bg-white p-6 rounded-lg shadow-lg w-96 text-center">
+        <input type="file" id="imageInput" class="mb-4 text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-green-50 file:text-green-700 hover:file:bg-green-100">
+        <button onclick="scanFridge()" class="bg-green-500 text-white px-6 py-2 rounded-lg font-bold hover:bg-green-600">Analyser mon frigo</button>
+    </div>
+
+    <div id="results" class="mt-8 text-lg font-semibold text-gray-700"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

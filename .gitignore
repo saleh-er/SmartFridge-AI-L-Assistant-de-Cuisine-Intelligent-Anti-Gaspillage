@@ -1,0 +1,15 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# IA Models (trop lourds pour GitHub gratuit)
+*.pt
+*.onnx
+
+# Docker
+.docker/
+
+# Environnement
+.env
