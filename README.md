@@ -24,8 +24,6 @@
 - **AI/ML**: YOLOv8 (Ultralytics), OpenCV, PyTorch.
 - **DevOps**: Docker, Docker Compose.
 
----
-
 ##  Getting Started
 
 ### Prerequisites
